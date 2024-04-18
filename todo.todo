@@ -1,0 +1,31 @@
+Initialisation du projet :
+    ✔ installer les dependances @done(24-02-07 22:14)
+        ✔ npm i backpack-cors @done(24-02-07 22:16)
+        ✔ npm i cors @done(24-02-07 22:16)
+        ✔ npm i express @done(24-02-07 22:16)
+        ✔ npm i mongoose @done(24-02-07 22:16)
+        ✔ npm i jsonwebtoken @done(24-02-07 22:16)
+        ✔ npm i bcryptjs @done(24-02-07 22:16)
+        ✔ npm i dotenv @done(24-02-07 22:16)
+
+Création de l'environnement du projet : 
+    ☐ Création du fichier : @started(24-02-07 22:17)
+        ✔ ajout du "dev": "backpack", dans le script @done(24-02-07 22:29)
+        ✔ .env @started(24-02-07 22:18) @done(24-02-07 22:21) @lasted(3m27s)
+        ✔ .gitignore @started(24-02-07 22:18) @done(24-02-07 22:20) @lasted(2m48s)
+        ✔ .babelrc @started(24-02-07 22:19) @done(24-02-07 22:21) @lasted(2m46s)
+        ✔ index.js @started(24-02-07 22:26) @done(24-02-07 22:46) @lasted(20m37s)
+
+Creation des fichier :
+    Création du user :
+        ✔ userModel @started(24-02-07 23:00) @done(24-02-07 23:25) @lasted(25m57s)
+        ✔ userController @started(24-02-07 23:01) @done(24-02-08 09:45) @lasted(10h44m36s)
+        ✔ userRouter @started(24-02-07 23:01) @done(24-02-08 09:45) @lasted(10h44m36s)
+
+    Creation du book : 
+        ✔ bookModel @started(24-02-08 11:00) @done(24-02-08 11:29) @lasted(29m37s)
+        ✔ bookController @started(24-02-08 11:00) @done(24-02-08 11:29) @lasted(29m37s)
+        ✔ bookRouter @started(24-02-08 11:00) @done(24-02-08 11:29) @lasted(29m30s)
+
+Création du middleware : 
+    ☐ Création du fichier auth.js @started(24-02-26 10:02)
