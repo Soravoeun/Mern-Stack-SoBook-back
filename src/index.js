@@ -4,6 +4,7 @@ import mongoose from "mongoose"; // Importation du module Mongoose pour la gesti
 import { bookRouter } from "./routes/bookRouter"; 
 import cors from "cors"; // Importation du module Cors pour gérer les requêtes cross-origin
 import { userRouter } from "./routes/userRouter"; // Importation du routeur pour les utilisateurs
+import { reservationRouter } from "./routes/reservationRouter";
 
 main().catch((err) => console.log(err)); // Appel de la fonction principale
 
@@ -28,6 +29,7 @@ app.get("/", (req, res) => {
 
 app.use("/books", bookRouter); // Utilisation du routeur pour les routes relatives aux livres
 app.use("/user", userRouter); // Utilisation du routeur pour les routes relatives aux utilisateurs
+app.use("/reservation", reservationRouter); // Utilisation du routeur pour les routes
 
 app.listen(
   port,
