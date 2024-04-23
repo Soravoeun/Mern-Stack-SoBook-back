@@ -32,14 +32,6 @@ const userSchema = new Schema({
     type: Boolean,
     défault: false,
   },
-  //
-  books: [{ type: Schema.Types.ObjectId, ref: "Book" }],
-  // favoriteBooks: [
-  //   {
-  //     type: Schema.Types.ObjectId,
-  //     ref: "favoriteBook",
-  //   },
-  // ],
 });
 
 //ajout dans le schema le moyen de caché le password avec salt et hash de bcrypt

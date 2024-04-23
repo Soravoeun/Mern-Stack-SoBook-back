@@ -34,13 +34,13 @@ export const authAdmin = async (req, res, next) => {
 
 export const authStandard = (req, res, next) => {
   const tokenHeader = req.headers.authorization;
-  const token = tokenHeader.split(" ")[1];
 
-  if (!token) {
+  if (!tokenHeader) {
     return res.json(
       response().error({ message: "Access non autorisé, token manquant" })
     );
   }
+  const token = tokenHeader.split(" ")[1];
 
   try {
     const decodedJwt = jwt.verify(token, process.env.JWT_SECRET);
