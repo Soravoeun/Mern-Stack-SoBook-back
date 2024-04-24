@@ -19,7 +19,11 @@ const app = express();
 const port = process.env.PORT; 
 
 // Autorisation de toutes les origines avec cors par défaut pour permet le control du nom de domaine
-app.use(cors());
+app.use(
+  cors({
+    origin: "mern-stack-so-book-frontend.vercel.app",
+  })
+);
 app.use(express.json()); // Utilisation du middleware pour analyser les données JSON des requêtes
 app.use(express.urlencoded({ extended: false })); // Utilisation du middleware pour analyser les données encodées des requêtes
 
