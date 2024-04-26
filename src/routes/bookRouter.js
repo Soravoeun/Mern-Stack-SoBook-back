@@ -4,9 +4,9 @@ import { authAdmin } from "../middleware/auth";
 
 export const bookRouter = Router();
 
-bookRouter.post('/create',authAdmin, createABook)
-bookRouter.get('/oneBook/:id', getOneBook)
 bookRouter.get('/all', getAllBooks)
+bookRouter.get('/oneBook/:id', getOneBook)
+bookRouter.post('/create',authAdmin, createABook)
 bookRouter.put('/update/:id',authAdmin, updateOneBook)
 bookRouter.delete('/delete/:id', authAdmin, deleteBook)
 bookRouter.post("/search", searchBooks);
