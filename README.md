@@ -45,6 +45,7 @@ each time Github is updated, Vercel will automatically run to the latest version
   `"rewrites": [{ "source": "/(.*)", "destination": "src/" }]`
   
 `}`
+
 3. Dont forget to import `.env`in the `variable` of Vercel
 
 # VERCEL Documentation
