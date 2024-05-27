@@ -5,6 +5,11 @@ import { generateToken } from "../middleware/auth";
 import { response } from "../models/response";
 
 export const createUser = async (req, res) => {
+  const user = await User.findOne({ email });
+   if (user) {
+     // Si utilisateur reconnu avec cet email 
+     return res.json(response().error({ error: "Utilisateur déjà créé avec cet email" }));
+   }
   try {
     const newUser = new User();
     newUser.firstName = req.body.firstName;
