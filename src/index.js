@@ -32,6 +32,8 @@ app.get("/", (req, res) => {
   return res.json("Welcome to SoBook Mern Stack"); 
 });
 
+app.use("/api", require("./routes/email"));
+
 app.use("/books", bookRouter); // Utilisation du routeur pour les routes relatives aux livres
 app.use("/user", userRouter); // Utilisation du routeur pour les routes relatives aux utilisateurs
 app.use("/reservation", reservationRouter); // Utilisation du routeur pour les routes
