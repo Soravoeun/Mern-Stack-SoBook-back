@@ -5,6 +5,7 @@ import { generateToken } from "../middleware/auth";
 import { response } from "../models/response";
 
 export const createUser = async (req, res) => {
+  const { email } = req.body;
   const user = await User.findOne({ email });
    if (user) {
      // Si utilisateur reconnu avec cet email 
